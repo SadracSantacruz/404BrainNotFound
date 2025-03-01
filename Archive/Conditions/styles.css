@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#chart {
+  width: 80%;
+  margin: auto;
+}
+
+.bar {
+  stroke: #333;
+  transition: fill 0.3s, height 0.3s;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.axis-label {
+  font-size: 14px;
+}
+
+#legend {
+  display: flex;
+  flex-direction: column; /* Align legend items in a column */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Add spacing between legend items */
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
+
+/* Tooltip Styling */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/*  */
+/* Table Styles */
+#table {
+  margin-top: 20px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Back to Overview Button */
+#back-to-overview {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+#back-to-overview:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+#back-to-overview:active {
+  background-color: #3e8e41; /* Even darker when clicked */
+  transform: scale(0.98);
+}
